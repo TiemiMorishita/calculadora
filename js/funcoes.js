@@ -24,14 +24,8 @@ function Potencia(){
 
 function Raiz(){
     num = document.getElementById("num").value;
-    raiz = document.getElementById("raiz").value;
 
-    if(num < 0){
-        resultado = ("<h3>O valor do radicando não pode ser menor que 0, pois não pertence aos reais</h3>");
-    }
-    else{
-        resultado = eval(Math.pow(parseInt(num), 1.0/ parseInt(raiz)));
-    }
+    resultado = Math.sqrt(parseInt(num),);
 
     document.getElementById("resultado").innerHTML = resultado;
 }
